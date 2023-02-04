@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#main-div {
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: auto;
+    height:90%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(133, 13, 13);
+    position:fixed;
+    top:0;
+    width:100%;
+}
+li {
+    float:left;
+}
+li a {
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    display:block;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: white;
+    color: rgb(133, 13, 13)
+}
+li a.active {
+    background-color: black;
+}
+.town {
+    background-color: rgb(235, 231, 231);
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
+button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(133,13,13);
+    border-radius: 5px;
+    border-color:rgb(133, 13, 13);
+    padding: 10px;
+}
+button:hover {
+    background-color: rgb(133, 13, 13);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.x-button, .x-button:hover {
+    background-color: rgb(133,13,13);
+    color: rgb(255, 255, 255);
+    float: right;
+    padding: 5px;
+    margin: 3px;
+}

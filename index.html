@@ -1,0 +1,48 @@
+<HTML>
+    <head>
+        <title>
+            Site Generator
+        </title>
+        <link href="mainstyle.css" rel="stylesheet" />
+    </head>
+    <body>
+        <script src="js/model.js"></script>
+        <script src="js/view.js"></script>
+        <script src="js/controller.js"></script>
+        <ul class="navbar" id="navbar">
+            <li><a href="#" id="townNav" nav='town-div' class="nav-link active" onclick="HandleNav(this)">Towns</a></li> 
+            <li><a href="#" id="dungeonNav" nav="dungeon-div" class="nav-link" onclick="HandleNav(this)">Dungeons</a></li>
+            <li><a href="#" id="castleNav" nav="castle-div" class="nav-link" onclick="HandleNav(this)">Castles</a></li>
+            <li style="float:right;"><a href="#" id="savedNav" class="nav-link" nav="saved-div" onclick="HandleNav(this)">Saved</a></li>
+        </ul>
+        <div id="main-div">
+            <div id="town-div">
+                <div>
+                    <button  onclick="CreateSite('Town',document.getElementById('town-size')['value'])">Generate</button>
+                    <p>
+                        <label>Settlement Size:</label>
+                        <select id="town-size">
+                            <option value="Any">Any</option>
+                            <option value="Outpost">Outpost</option>
+                            <option value="Hamlet">Hamlet</option>
+                            <option value="Village">Village</option>
+                        </select>
+                    </p>
+                </div>
+                <span id="town-span"></span>
+            </div>  
+            <div id="dungeon-div" hidden>
+                <p>this is the dungeon div</p>
+                <button onclick="">Generate</button>
+            </div>
+            <div id="castle-div" hidden>
+                <p>this is the castle div</p>
+                <button onclick="">Generate</button>
+            </div>
+            <div id="saved-div" hidden>
+                <button onclick="Download()">Download</button>
+                <span id="saved-creations"></span>
+            </div>
+        </div>    
+    </body>
+</HTML>
